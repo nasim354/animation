@@ -1,0 +1,81 @@
+body{
+ margin: auto;
+ padding: auto;
+ background-image: linear-gradient(rgba(100,57,40,0.5),rgba(40,57,100,0.8),rgba(30,120,80,0.7)),url(imges/border-images/border-imges.png);
+}
+.container{
+    margin-bottom: 50px;
+}
+h1{
+  
+    text-align: center;
+}
+.box{
+    width: 700px;
+    height: 500px;
+    /* background-color: rgb(191, 51, 35 ); */
+    color: wheat;
+    font-size: 30px;
+    font-family: impact;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border: 4px solid;
+    margin: 40px auto;
+    animation-name: green;
+    animation-duration:15s;
+  animation-iteration-count: infinite;
+  background-image: url(imges/border-images/border-imges.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+.box:hover{
+    width: 500px;
+    height: 500px;
+    background-image: url(imges/group-images.png);
+    border-radius: 50%;
+    border-color: lime;
+   
+}
+@keyframes green {
+   0%{background-color: rgb(95, 234, 234);}
+   25%{background-color: rgb(221, 94, 72);}
+   50%{
+    background-color: rgb(131, 171, 51);
+   }
+   75%{
+    background-color: rebeccapurple;
+   }
+   100%{
+    background-color: silver;
+   }
+}
+.box-1 h2{
+    width:100%;
+    height:45px;
+    background-color: rgb(2, 145, 57);
+    animation-name:red;
+    animation-duration: 10s;
+    animation: linear  infinite;
+    transform: translate(-50,-50);
+  
+}
+@keyframes red {
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-100,0);}
+}
+h1{
+    animation-name: yellow;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes yellow {
+         0%{color:mintcream}
+        25%{color: rgb(233, 12, 12);}
+        50%{color:rgb(35, 6, 178);}
+        75%{color:rgb(5, 71, 126);}
+        100%{color:green;}
+}
+
